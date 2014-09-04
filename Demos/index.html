@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+            
+      <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+      
+      <title>Dominic Aquilina's Centre for Kids Who Can't JS Good</title>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <h1>Javascript Demo Package</h1>
+      
+      <form id="demoList" onSubmit="return false;">
+        <fieldset>
+          <legend>
+            Select a Demo!
+          </legend>
+          
+          <!-- 
+            It's generally bad practice to use inline line breaks (br).
+            Visual effects should be relegated to css; in this case,
+            block-formatted elements being used to separate components.
+            We maintain semantic structure by grouping elements, and
+            allow developers to change the appearance by changing how
+            those elements are displayed.
+          -->
+          <div>
+            <input id="demo1" type="radio" name="demoSelection" />
+            <label for="demo1">Demo 1 - Fun With Forms and Fancy Formatting</label>
+          <div>
+          
+          <div>
+            <input id="demo2" type="radio" name="demoSelection" />
+            <label for="demo2">Demo 2 - Loops and Conditionals</label>
+          <div>
+          
+          <input type="button" value="Make it so!" onClick="fireDemo (event)" />
+        </fieldset>
+      </form>
+      
+      <div id="demo1Container" class="demoContainer">
+        <h2>Demo 1 - Fun with Forms and Fancy Formatting</h2>
+        
+        <form>
+          <div>
+            <label for="txtName">What is your name?</label>
+            <input id="txtName" type="text" placeholder="e.g. 'World'" />
+          </div>
+          
+          <div>
+            <label for="txtQuest">What is your quest?</label>
+            <input id="txtQuest" type="text" placeholder="To find the holy grail" />
+          </div>
+          
+          <div>
+            <label>What is your favourite number (of those below)?</label>
+            
+            <span>
+              <input id="demo1_1" type="radio" name="demo1Style" value="1" checked />
+              <label for="demo1_1" class="radioLabel">0</label>
+            </span>
+            
+            <span>
+              <input id="demo1_2" type="radio" name="demo1Style" value="2" />
+              <label for="demo1_2" class="radioLabel">Pi</label>
+            </span>
+            
+            <span>
+              <input id="demo1_3" type="radio" name="demo1Style" value="3" />
+              <label for="demo1_3" class="radioLabel">42</label>
+            </span>
+            
+            <span>
+              <input id="demo1_4" type="radio" name="demo1Style" value="4" />
+              <label for="demo1_4" class="radioLabel">9001</label>
+            </span>
+          </div>
+          
+          <input type="button" value="It is written" onClick="demo1_validate ()" />
+          <input type="button" value="Clear" onClick="demo1_clear ()" />
+        </form>
+        
+        <div id="demo1Results"></div>
+      </div>
+      
+      <div id="demo2Container" class="demoContainer">
+        
+      </div>
+    </div>
+    
+    <script type="text/javascript" src="js/demo1.js"></script>
+    <script type="text/javascript" src="js/demoSuite.js"></script>
+  </body>
+</html>

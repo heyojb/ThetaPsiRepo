@@ -1,0 +1,157 @@
+/* Elements */
+*
+{
+  cursor: auto;
+}
+
+body
+{
+  /* Resultant Colour: #AAAABB. You can use colour names as well (e.g. 'Red') */
+  background-color: #AAB;
+}
+
+fieldset
+{
+  /* Format: top left/right bottom */
+  padding: 0.5rem 1rem 1rem;
+  
+  border-radius: 1rem;
+}
+
+h1, h2
+{
+  text-align: center;
+  
+  margin-top: 0;
+}
+
+input
+{
+  border-radius: 3px;
+  
+  /* Format: property duration easing-function */
+  -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
+input[type=button], input[type=submit]
+{
+  margin: 1rem;
+  
+  border: 1px solid #444;
+  
+  background-color: #EEE;
+  
+  cursor: pointer;
+}
+
+input[type=button]:hover, input[type=button]:focus, input[type=submit]:hover, input[type=submit]:focus
+{
+  background-color: #AAB;
+}
+
+input[type=text]
+{
+  padding: 3px;
+  
+  border: none;
+  
+  -webkit-box-shadow: 0px 0px 1px 0px #999;
+          box-shadow: 0px 0px 1px 0px #999;
+}
+
+input[type=text]:focus
+{
+  -webkit-box-shadow: 0px 0px 2px 0px #000;
+          box-shadow: 0px 0px 2px 0px #000;
+}
+
+input[type=text].error
+{
+  border: 2px solid red;
+}
+
+/* Any selector specified in square brackets refers to
+   options within the HTML tags themselves */
+label[for]
+{
+  cursor: pointer;
+}
+
+/* Classes */
+.demoContainer
+{
+  max-height: 0px;
+  width: 50%;
+  
+  margin: 0 auto;
+  
+  opacity: 0.0;
+  
+  border: 1px solid black;
+  border-radius: 1rem;
+  
+  text-align: center;
+  
+  -webkit-transition: opacity 1s ease-in-out;
+          transition: opacity 1s ease-in-out;
+}
+
+.demoContainer_expand
+{
+  max-height: 1000px;
+  
+  padding: 1rem;
+}
+
+.demoContainer_visible
+{
+  opacity: 1.0;
+}
+
+.radioLabel
+{
+  width: auto !important;
+  min-width: 100px;
+  
+  padding-right: 10px;
+  
+  display: inline-block !important;
+}
+
+.wrapper
+{
+  width: 80%;
+  
+  margin: 0 auto;
+  padding: 1rem;
+  
+  border: 1px solid black;
+  border-radius: 2rem;
+  
+  background-color: #DDD;
+}
+
+/* IDs */
+#demo1Container label
+{
+  width: 100%;
+  
+  display: block;
+  
+  text-align: left;
+}
+
+#demo1Container input[type=text]
+{
+  width: 100%;
+  
+  margin: 2px 0 10px;
+  
+  display: block;
+}
+
+#demoList
+{
+  margin-bottom: 1rem;
+}
